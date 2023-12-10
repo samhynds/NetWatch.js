@@ -1,0 +1,8 @@
+node_modules
+.vscode
+.env
+logs
+data
+setup/setup_db.sql
+queuedata.json
+db_data

@@ -1,0 +1,26 @@
+{
+  "name": "netwatch",
+  "version": "3.7.1",
+  "description": "A flexible web crawler.",
+  "main": "app.js",
+  "scripts": {
+    "debug": "node --http-parser=legacy --inspect-brk app.js",
+    "start": "node --http-parser=legacy app.js",
+    "start:docker": "./wait-for-it.sh database:3306 -t 30 && ./wait-for-it.sh queue:5672 -t 30 && node setup/database.js && node --http-parser=legacy app.js"
+  },
+  "engines": {
+    "node": "16.17.1"
+  },
+  "keywords": [],
+  "author": "Sam Hynds",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "axios": "1.1.2",
+    "cheerio": "^1.0.0-rc.12",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "md5": "^2.3.0",
+    "moment": "^2.29.0",
+    "mysql2": "^2.3.3"
+  }
+}
