@@ -1,7 +1,7 @@
 > [!IMPORTANT]
 > NetWatch.js has been superseded by [netwatch](https://github.com/samhynds/netwatch) and is no longer being maintained
 
-# NetWatch
+# NetWatch.js
 
 NetWatch is a general web crawler. It works by using a crawl rule file, which specifies which pages the crawler should initially request, and how it should handle repsonses to different pages. NetWatch also utilises a modular post processing system which can dynamically load and process responses depending on the mime type of the response received. It currently has built-in post processing modules for parsing and storing HTML and for saving generic blob files (images, videos, etc). NetWatch also respects specified rate limits and robots.txt files.
 
